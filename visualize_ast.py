@@ -2,7 +2,6 @@ import ast
 import networkx as nx
 import matplotlib.pyplot as plt
 import abc
-import copy
 
 from dataclasses import dataclass
 from pathlib import Path
