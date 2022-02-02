@@ -41,7 +41,7 @@ optional arguments:
 ## Example 🖼️
 
 ```shell
-./main.py examples/fib_naive.py --no-show --output examples/images/fib_naive.svg
+./main.py examples/fib_naive.py --no-show --output artifacts/fib_naive.svg
 ```
 
-![example](./examples/images/fib_naive.svg)
+![example](./artifacts/fib_naive.svg)
