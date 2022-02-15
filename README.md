@@ -44,4 +44,4 @@ optional arguments:
 ./main.py examples/fib_naive.py --no-show --output artifacts/fib_naive.svg
 ```
 
-![example](./artifacts/fib_naive.svg)
+![example](./hw01/artifacts/fib_naive.svg)
