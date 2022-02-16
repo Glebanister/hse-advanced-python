@@ -8,6 +8,13 @@ from pathlib import Path
 from typing import Optional, Dict, Any, Tuple, List, Type, Iterable
 
 
+__all__ = [
+    'visualize_ast',
+    'visualize_from_source',
+    'visualize_from_file',
+]
+
+
 @dataclass
 class GraphNodeProps:
     color: Optional[str]
