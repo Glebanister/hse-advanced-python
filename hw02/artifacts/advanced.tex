@@ -1,0 +1,44 @@
+\documentclass{article}
+\usepackage[margin=0.7in]{geometry}
+\usepackage[parfill]{parskip}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{graphicx}
+\graphicspath{{../resources}}
+\begin{document}
+\section{This is test for latex printer}
+\subsection{Plain text}
+Hello!
+\subsection{Centered text}
+\begin{center}
+Some text in the center
+\end{center}
+\subsection{Table}
+\begin{center}
+\begin{tabular}
+{| c | c | c |}
+\hline
+1 & 2 & 3\\
+\hline
+4 & 5 & 6\\
+\hline
+\end{tabular}
+\end{center}
+\subsection{Average number of animals per household}
+\begin{tabular}
+{| c || c  c  c  c  c |}
+\hline
+ & Russia & USA & UK & Australia & China\\
+\hline\hline
+Cats & 0.5 & 1.0 & 2.9 & 0.6 & 4.9\\
+Dogs & 10.5 & 6.3 & 29.1 & 10.6 & 0.09\\
+Snakes & 0.001 & 0.4 & 0.65 & 213.5 & 1.13\\
+\hline
+\end{tabular}
+\subsection{Note}
+\begin{center}
+Please, scroll down for the puppy...
+\end{center}
+\subsection{And finally, puppy!}
+\includegraphics[width=\textwidth]{puppy.jpeg}
+\end{document}

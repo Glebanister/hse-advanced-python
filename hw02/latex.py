@@ -1,4 +1,3 @@
-import operator
 from typing import (
     NewType, Dict, Optional,
     Callable, Tuple,
