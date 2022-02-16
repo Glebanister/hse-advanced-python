@@ -23,8 +23,8 @@ To get more out your `visualize.py` experience,
 just add `-h` flag to get more exhaustive instructions.
 
 ```shell
-$ ./src/visualize.py
-usage: ./src/visualize.py [-h] [--output OUTPUT] [--with-traceback] [--no-show] [file]
+$ ./visualize.py
+usage: ./visualize.py [-h] [--output OUTPUT] [--with-traceback] [--no-show] [file]
 
 Python code visualizer
 
