@@ -7,7 +7,7 @@ with open('../README.md') as f:
     long_description = f.read()
 
 setup(name='beautiful_ast',
-      version='1.0.1',
+      version='1.0.2',
       description='Beautiful AST generator',
       author='Gleb Marin',
       author_email='glebmar2001@gmail.com',
