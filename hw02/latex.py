@@ -1,12 +1,10 @@
 import operator
-
 from typing import (
     NewType, Dict, Optional,
     Callable, Tuple,
-    Type, Union, Iterable, List, Any)
+    Type, Iterable, List, Any)
 from dataclasses import dataclass
 from enum import Enum
-from functools import reduce
 
 import utils
 

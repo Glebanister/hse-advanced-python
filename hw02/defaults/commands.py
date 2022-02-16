@@ -1,4 +1,3 @@
-from sys import stdout
 from typing import Dict, Optional, List
 from pathlib import Path
 

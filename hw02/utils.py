@@ -1,7 +1,7 @@
 import operator
 
 from enum import Enum
-from typing import TypeVar, Iterable, Tuple, Optional, Dict, List
+from typing import TypeVar, Iterable, Optional, Dict
 from functools import reduce
 from itertools import zip_longest
 

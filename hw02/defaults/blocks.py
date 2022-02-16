@@ -1,7 +1,4 @@
-import operator
-
-from typing import List, Any, Union, Tuple
-from functools import reduce
+from typing import List, Any, Tuple
 
 import latex
 
