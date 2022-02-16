@@ -7,13 +7,13 @@ with open('../README.md') as f:
     long_description = f.read()
 
 setup(name='beautiful_ast',
-      version='1.0.2',
+      version='1.0.3',
       description='Beautiful AST generator',
       author='Gleb Marin',
       author_email='glebmar2001@gmail.com',
       license='MIT',
       url='https://github.com/Glebanister/hse-advanced-python/tree/hw-01-beatiful-ast/hw01',
-      packages=find_packages(where='./src/'),
+      packages=find_packages(),
       long_description=long_description,
       long_description_content_type='text/markdown',
       classifiers=[
