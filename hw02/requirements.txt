@@ -1,0 +1,7 @@
+# This file may be used to create an environment using:
+# $ conda create --name <env> --file <this file>
+# platform: osx-64
+networkx>=2.6.3
+matplotlib>=3.4.3
+pydot>=1.4.2
+pygraphviz>=1.8
