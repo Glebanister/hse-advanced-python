@@ -1,16 +1,24 @@
 #!/usr/bin/env python3
 
 from setuptools import setup, find_packages
-from pathlib import Path
 
 import distutils.command.bdist_conda
 
 
-with open('../README.md') as f:
+with open('README.md') as f:
     long_description = f.read()
 
+with open('requirements.txt') as f:
+    requirements = [
+        line.strip()
+        for line in f.readlines()
+        if line.strip() and not line.strip().startswith('#')
+    ]
+
+print(requirements)
+
 setup(name='beautiful_ast',
-      version='1.0.4',
+      version='1.0.5',
       description='Beautiful AST generator',
       author='Gleb Marin',
       author_email='glebmar2001@gmail.com',
@@ -28,5 +36,6 @@ setup(name='beautiful_ast',
       ],
       include_package_data=True,
       distclass=distutils.command.bdist_conda.CondaDistribution,
-      conda_buildnum=1
+      conda_buildnum=1,
+      python_requires=">=3.9",
       )

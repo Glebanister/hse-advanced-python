@@ -6,7 +6,7 @@ import traceback
 
 from pathlib import Path
 
-import ast_visualizer
+import src.beautiful_ast.ast_visualizer as ast_visualizer
 
 
 def visualize_with_args(args: argparse.Namespace):
