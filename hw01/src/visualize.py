@@ -6,16 +6,16 @@ import traceback
 
 from pathlib import Path
 
-import visualize_ast
+import ast_visualizer
 
 
 def visualize_with_args(args: argparse.Namespace):
     output_file_path = None if args.output is None else Path(args.output)
     if args.file is not None:
-        visualize_ast.visualize_from_file(Path(args.file), output_file_path, args.no_show)
+        ast_visualizer.visualize_from_file(Path(args.file), output_file_path, args.no_show)
     else:
         all_input = sys.stdin.read()
-        visualize_ast.visualize_from_source(all_input, output_file_path, args.no_show)
+        ast_visualizer.visualize_from_source(all_input, output_file_path, args.no_show)
 
 
 def main():

@@ -13,7 +13,7 @@ setup(name='beautiful-ast',
       author_email='glebmar2001@gmail.com',
       license='MIT',
       url='https://github.com/Glebanister/hse-advanced-python/tree/hw-01-beatiful-ast/hw01',
-      packages=find_packages(),
+      packages=find_packages(where='./src/'),
       long_description=long_description,
       long_description_content_type='text/markdown',
       classifiers=[
