@@ -6,7 +6,7 @@ import distutils.command.bdist_conda
 with open('../README.md') as f:
     long_description = f.read()
 
-setup(name='beautiful-ast',
+setup(name='beautiful_ast',
       version='1.0',
       description='Beautiful AST generator',
       author='Gleb Marin',
