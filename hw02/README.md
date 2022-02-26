@@ -47,3 +47,11 @@ $ ./main.py advanced artifacts/advanced.tex
 ```
 
 ![sdf](./resources/advanced.png)
+
+### Generate AST via Docker
+
+```bash
+docker build -t gen-latex .
+docker run --name ast_pdf gen-latex
+docker cp ast_pdf:ast_pdf/ast.pdf from_docker.pdf
+```

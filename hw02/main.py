@@ -106,12 +106,20 @@ def latex_with_image(images_root_paths: List[Path], images_rel_pahts: List[Path]
         command.graphicspath(images_root_paths),
 
         block.document(
+            command.section('Table'),
+            block.centered(
+                block.table_simple([[1, 2, 3], [4, 5, 6]],
+                                   separate_rows=True,
+                                   separate_cols=True)
+            ),
+            command.section('Image'),
             *map(lambda img: command.includegraphics(img, width='\\textwidth'), images_rel_pahts)
         )
     )
 
 
 def latex_of_ast(root: Path):
+    root.mkdir(exist_ok=True)
     out_path = root / 'fib_ast.png'
     beautiful_ast.visualize_from_source(
         "a = lambda n: 1 if n < 2 else a(n - 1) + a(n - 2)",
