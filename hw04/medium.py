@@ -65,7 +65,7 @@ def integrate_with_process_pool(
 
 
 def main():
-    with open('artifacts/medium_compare.txt', 'w') as measurements_file:
+    with open('artifacts/medium.txt', 'w') as measurements_file:
         for pool_size in range(1, 20):
             start_time = time.time()
             for _ in range(3):
